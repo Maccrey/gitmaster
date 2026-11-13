@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GitMaster Academy icon">
+ <defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#4d8bff"/><stop offset="1" stop-color="#6c56d6"/></linearGradient>
+ </defs>
+ <rect width="64" height="64" rx="15" fill="url(#bg)"/>
+ <path d="M18 17V47 M18 23C18 33 44 27 44 41" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round"/>
+ <circle cx="18" cy="17" r="5.5" fill="#e7fdfb" stroke="#ffffff" stroke-width="1.5"/>
+ <circle cx="18" cy="47" r="5.5" fill="#e7fdfb" stroke="#ffffff" stroke-width="1.5"/>
+ <circle cx="44" cy="41" r="5.5" fill="#83f9d8" stroke="#ffffff" stroke-width="1.5"/>
+</svg>

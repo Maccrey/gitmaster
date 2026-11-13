@@ -1,0 +1,5 @@
+GitMaster Academy v1.27 배포 패키지
+
+압축 해제 후 index.html 및 다른 파일과 폴더 전체를 웹 호스팅 루트에 업로드하세요.
+배포 주소: https://git.maccrey.com
+PDF 전자책 포함
