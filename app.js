@@ -335,7 +335,7 @@ function exportProgress(){const data=JSON.stringify({version:1,exportDate:new Da
 document.getElementById('language').addEventListener('change',e=>{app.lang=e.target.value;try{if(location.protocol!=='about:'){const url=new URL(location.href);url.searchParams.set('lang',app.lang);history.replaceState(null,'',url.pathname+url.search+url.hash)}}catch(_){/* file or embedded previews may disallow history changes */}persist();render()});document.getElementById('mobile-menu').addEventListener('click',()=>document.getElementById('sidebar').classList.toggle('open'));
 function toggleSidebarFromBrand(){
  const sidebar=document.getElementById('sidebar');
- if(window.matchMedia('(max-width:860px)').matches){sidebar.classList.toggle('open');return;}
+ if(window.matchMedia('(max-width:960px)').matches){sidebar.classList.toggle('open');return;}
  app.sidebarExplicit=true;
  app.sidebarCompact=!sidebar.classList.contains('is-compact');
  render();

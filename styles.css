@@ -273,6 +273,22 @@ body.workspace-focus .workbench .terminal-station{flex:1.2;min-height:252px;over
 @media(max-width:860px){.sidebar.is-compact{position:fixed;left:-270px;width:256px;flex-basis:256px;padding:24px 12px}.sidebar.is-compact.open{left:0}.sidebar.is-compact .brand>span:last-child,.sidebar.is-compact .sidebar-label,.sidebar.is-compact .nav-link>span:not(.ico),.sidebar.is-compact .sidebar-bottom{display:block}.sidebar.is-compact .nav-link{justify-content:flex-start;gap:13px;padding:12px}.sidebar.is-compact .brand{margin:0 0 28px}.sidebar.is-compact .nav-link .ico{font-size:17px}#toggle-sidebar{display:none}body.workspace-focus main{padding:12px 14px}body.workspace-focus .lab-layout{height:auto;min-height:0;grid-template-columns:1fr}body.workspace-focus .lab-intro,body.workspace-focus .workbench,body.workspace-focus .right-panel{max-height:none;overflow:visible;height:auto}body.workspace-focus .workbench{overflow:hidden}body.workspace-focus .workbench .terminal-station{min-height:300px}body.workspace-focus .lab-pane.lab-right{display:block}.cp-main{height:auto;grid-template-columns:1fr;min-height:0}.cp-main>section{max-height:none;overflow:visible}.cp-workbench{overflow:hidden}.cp-workbench .cp-editor-shell{min-height:235px}.cp-workbench .cp-editor-shell .editor{min-height:235px}.cp-terminal-station{min-height:350px}.cp-state{display:flex}.cp-state .graph-scroll{max-height:270px}.cp-head{align-items:flex-start}}
 @media(max-width:560px){.cp-head{display:block}.cp-score{text-align:left;display:flex;align-items:center;gap:11px;margin:10px 0}.cp-score .cp-meter{flex:1;min-width:90px}.cp-head h1{font-size:21px}.cp-head p{font-size:11px}.cp-stage{min-height:35px}.exam-cta{flex-direction:column;align-items:flex-start;padding:16px}.exam-cta strong{font-size:17px}.cp-results{flex-direction:column;align-items:flex-start}body.workspace-focus .terminal-explainer summary span{display:none}}
 @media(prefers-reduced-motion:reduce){.sidebar{transition:none}}
+
+/* Responsive navigation drawer: keep the full menu reachable on tablets and narrow browsers. */
+html,body{overflow-x:hidden}
+@media(max-width:960px){
+ .app-shell{display:block;min-height:100dvh}
+ .site-area{width:100%;min-width:0}
+ .sidebar,.sidebar.is-compact{position:fixed;inset:0 auto 0 0;left:0;width:min(286px,88vw);max-width:286px;height:100dvh;max-height:100dvh;flex-basis:auto;padding:24px 12px 18px;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;transform:translateX(-105%);transition:transform .2s ease;z-index:60}
+ .sidebar.open,.sidebar.is-compact.open{left:0;transform:translateX(0)}
+ .sidebar.is-compact .brand>span:last-child,.sidebar.is-compact .sidebar-label,.sidebar.is-compact .nav-link>span:not(.ico),.sidebar.is-compact .sidebar-bottom{display:block}
+ .sidebar.is-compact .brand{margin:0 0 28px}
+ .sidebar.is-compact .nav-link{justify-content:flex-start;gap:13px;padding:12px}
+ .sidebar.is-compact .nav-link .ico{font-size:17px}
+ #toggle-sidebar{display:none}
+ .mobile-menu{display:grid;place-items:center}
+ .topbar{position:sticky;top:0;z-index:55}
+}
 /* Keep terminal *input* visible at the bottom of the first screen. */
 @media(min-width:861px){
  body.workspace-focus .workbench .terminal-station{flex:0 0 min(330px,48%);min-height:285px}
