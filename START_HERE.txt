@@ -3,3 +3,11 @@ GitMaster Academy v1.27 배포 패키지
 압축 해제 후 index.html 및 다른 파일과 폴더 전체를 웹 호스팅 루트에 업로드하세요.
 배포 주소: https://git.maccrey.com
 PDF 전자책 포함
+
+Google Analytics 4
+- index.html의 meta[name="ga-measurement-id"] 값을 실제 측정 ID(예: G-XXXXXXXXXX)로 교체하세요.
+- 배포 후 learning_route_view, lab_complete, ebook_open, learning_cta_click, language_select, home_click 이벤트가 GA4에 기록됩니다.
+- 기본값은 placeholder라서 측정 ID를 설정하기 전에는 외부로 데이터를 보내지 않습니다.
+
+언어별 PDF
+- 웹 앱은 선택한 언어에 맞춰 ebook/GitMaster_Academy_Practical_Git_{KO|EN|JA|ZH}.pdf 링크를 사용합니다.

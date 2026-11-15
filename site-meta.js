@@ -1,6 +1,8 @@
 /* GitMaster promotional banner: label + link, independent of simulator and user progress. */
 (function(){
 'use strict';
+window.ACADEMY_PDF_URLS={ko:'ebook/GitMaster_Academy_Practical_Git_KO.pdf',en:'ebook/GitMaster_Academy_Practical_Git_EN.pdf',ja:'ebook/GitMaster_Academy_Practical_Git_JA.pdf',zh:'ebook/GitMaster_Academy_Practical_Git_ZH.pdf'};
+window.getAcademyPdfUrl=function(lang){return window.ACADEMY_PDF_URLS[lang]||window.ACADEMY_PDF_URLS.ko;};
 const copy={
 ko:{label:'',line:'대화가 이어지는 하루, 가족의 안심까지',cta:'키노라 만나보기',alt:'KINORA 여섯 AI 반려친구',aria:'KINORA 여섯 반려친구와 가족 안부 서비스 소개, 새 탭에서 열기',site:'ko'},
 en:{label:'',line:'Everyday conversations, peace of mind for family',cta:'Explore KINORA',alt:'KINORA six friendly companions',aria:'Explore KINORA companions and family reassurance in a new tab',site:'en'},

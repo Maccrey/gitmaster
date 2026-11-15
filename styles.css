@@ -972,6 +972,7 @@ body.team-intro-active .sidebar.is-compact{width:66px;flex-basis:66px;}
 
 /* In-flow sticky header ensures the promo stays visible while scrolling, without overlaying the workbench. */
 .topbar{position:sticky;top:0;z-index:24;}
+.home-link{width:34px;height:34px;display:grid;place-items:center;border:1px solid #2f496b;border-radius:9px;background:#132440;color:#b9d7f5;text-decoration:none;transition:color .16s ease,border-color .16s ease,background .16s ease}.home-link:hover,.home-link:focus-visible{color:#8eeed6;border-color:#62bfae;background:#183552}.home-link svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linejoin:round}
 #app [id]{scroll-margin-top:83px;}
 .seo-language-links{display:flex;gap:10px;flex-wrap:wrap;align-items:center;font-size:10px}.seo-language-links a{color:#9cb8d9}.seo-language-links a:hover{text-decoration:underline}@media(max-width:760px){.footer{flex-wrap:wrap}.seo-language-links{width:100%;}}
 
